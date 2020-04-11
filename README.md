@@ -10,7 +10,6 @@ If there are multiple meeting instances in one meeting ID, --uuid [Meeting UUID]
 $ python meeting_qos_dump.py --id 123-456-789 --uuid fdjapewajsc --start 2020-04-10 --end 2020-04-10 --path ./data
 ```
 
-This will generate:
-- ./data/meeting_[Meeting ID]_[Meeting Instance UUID].json: for meeting details
-- ./data/user_[Meeting ID]_[Meeting Instance UUID]_[User ID].json: for each user QoS
-recorded in the meeting instance fdjapewajsc of the meeting id 123-456-789.
+This will generate the following files for the meeting instance fdjapewajsc of the meeting id 123-456-789.:
+- ./data/meeting_[Meeting ID]_[Meeting Instance UUID].json: meeting details
+- ./data/user_[Meeting ID]\_[Meeting Instance UUID]\_[User ID].json: each user QoS
